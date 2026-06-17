@@ -1,9 +1,10 @@
-   nc_plus_one-db Database 
+   <h1>nc_plus_one-db Database <h1>
 
-  Overview:
+  <h2>Overview</h2>
    Creating database from sctach creating tables and sseding them with data then connect to it and apply some SQL queries.
 
-   setup
+   <h1>setup</h1>
+   
    Creating Github repository.<nc_plus_one_project>
 
    creating Database nc_plus_one-db. using the sql command : CREATE DATABASE nc_plus_one_project;
@@ -24,7 +25,7 @@
     
     
 
-   Technology:
+   <h2>Technology</h2>
 
    this project mainly uses SQL 
 
