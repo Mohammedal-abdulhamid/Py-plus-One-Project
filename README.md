@@ -29,4 +29,16 @@
 
    this project mainly uses SQL 
 
+   Application
+
+create .env file and add credentials 
+DB_NAME=
+DB_USER=
+DB_PASSWORD=
+DB_HOST=
+DB_PORT=
+
+configure connection.py with required credentials and establish connection to the database.
+
+
    
