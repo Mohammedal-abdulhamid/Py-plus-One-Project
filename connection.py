@@ -16,4 +16,6 @@ print("Connected successfully!")
 
 
 
+
 cur = conn.cursor() 
+conn.close()

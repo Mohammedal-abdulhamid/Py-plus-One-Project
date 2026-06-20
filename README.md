@@ -41,4 +41,19 @@ DB_PORT=
 configure connection.py with required credentials and establish connection to the database.
 
 
+connection 
+
+established connection using cridential in .env file
+
+database setup
+
+drop exixting database and re-creating it in setup file
+constract scheema b dropping existing tables and creating new ones
+
+Seed Function
+
+creating automatic seeding function that given a path and table name and it will seed any table accordingly.
+
+
+
    
