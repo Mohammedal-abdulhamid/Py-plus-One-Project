@@ -1,14 +1,33 @@
    <h1>nc_plus_one-db Database <h1>
 
   <h2>Overview</h2>
-   Creating database from sctach creating tables and sseding them with data then connect to it and apply some SQL queries.
+  this project is a backend that manages users, events, venues, and RSVPs.
+  It demonstrates how to design and build a relational database-backed application using Python and PostgreSQL, including database setup, schema creation, and data seeding from JSON files.
+   
+   The project follows a structured workflow:
 
+    - Create and reset the PostgreSQL database
+    - Define relational tables with foreign keys
+    - Seed the database with sample data
+    - Prepare the system for backend development
+   extended taask: creating API and endpoint to retrive data from each table using psycopg 
+
+
+    Features
+      Create and drop PostgreSQL databases programmatically
+      Define relational database schema (users, events, venues, RSVPs)
+      Manage relationships using foreign keys
+      Seed database with JSON data
+      Modular Python scripts for database operations
+      
    <h1>setup</h1>
    
    Creating Github repository.<nc_plus_one_project>
 
    creating Database nc_plus_one-db. using the sql command : CREATE DATABASE nc_plus_one_project;
    create SQL setup.sql file that drops existing database if existed and creating database nc_plus_one-db and scheema 
+
+   create tables in scheema.sql
 
    create seed.sql file that insert data into tables.
 

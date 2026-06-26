@@ -1,9 +1,11 @@
 
+DROP TABLE IF EXISTS rsvps CASCADE ;
+DROP TABLE IF EXISTS events CASCADE ;
+DROP TABLE IF EXISTS venues CASCADE ;
+DROP TABLE IF EXISTS users CASCADE ;
 
-DROP TABLE IF EXISTS users;
-DROP TABLE IF EXISTS venues;
-DROP TABLE IF EXISTS rsvps;
-DROP TABLE IF EXISTS events;
+
+
 
 
 CREATE TABLE users (
@@ -15,6 +17,7 @@ CREATE TABLE users (
 );
 
 
+
 CREATE TABLE venues (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
@@ -22,14 +25,6 @@ CREATE TABLE venues (
     capacity INT
 );
 
-CREATE TABLE rsvps (
-    id SERIAL PRIMARY KEY,
-    attendee_id INT,
-    event_id INT,
-    created_at TIMESTAMPTZ DEFAULT NOW()
-    
-   
-);
 
 
 
@@ -42,6 +37,15 @@ CREATE TABLE events (
     organiser_id INT,
     venue_id INT,
     created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE TABLE rsvps (
+    id SERIAL PRIMARY KEY,
+    attendee_id INT,
+    event_id INT,
+    created_at TIMESTAMPTZ DEFAULT NOW()
+    
+   
 );
 
 

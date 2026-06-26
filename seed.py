@@ -1,7 +1,8 @@
 import psycopg2
 import json
 
-
+from run_file import run_file
+run_file("db/scheema.sql")
 
 
 def seed(filepath,table_name):
@@ -32,9 +33,6 @@ seed("db/data/users.json", "users")
 seed("db/data/venues.json", "venues")
 seed("db/data/events.json", "events")
 seed("db/data/rsvps.json", "rsvps")
-
-
-
 print("Seed completed successfully!")
 
    
